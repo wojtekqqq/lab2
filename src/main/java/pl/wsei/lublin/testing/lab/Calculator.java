@@ -4,9 +4,12 @@ import java.util.stream.DoubleStream;
 
 public class Calculator {
 
-    public static double add(double... operands){
-        return DoubleStream.of(operands)
-                .sum();
+    public static double add(double... operands) {
+        return subtract(operands);
+//        return DoubleStream.of(operands)
+//                .sum();
+
+
     }
 
     public static double multiply(double... operands) {
@@ -26,19 +29,4 @@ public class Calculator {
             res /= operands[i];
         return res;
      }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
