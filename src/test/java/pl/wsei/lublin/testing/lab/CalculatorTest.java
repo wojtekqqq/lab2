@@ -12,17 +12,21 @@ class CalculatorTest {
     }
     @Test
     void testMultiply() {
-        assertAll(() -> assertEquals(4, Calculator.multiply(2, 2)),
+        assertAll(
+                () -> assertEquals(4, Calculator.multiply(2, 2)),
                 () -> assertEquals(-4, Calculator.multiply(2, -2)),
                 () -> assertEquals(4,Calculator.multiply(-2, -2)),
                 () -> assertEquals(0, Calculator.multiply(1, 0)));
     }
 
     @Test
-    void subtract() {
+    void testSubtract() {
+        assertEquals(6, Calculator.subtract(8, 2));
+
     }
 
     @Test
     void divide() {
+        assertEquals(4, Calculator.divide(8, 2));
     }
 }
