@@ -5,9 +5,9 @@ import java.util.stream.DoubleStream;
 public class Calculator {
 
     public static double add(double... operands) {
-        return subtract(operands);
-//        return DoubleStream.of(operands)
-//                .sum();
+//        return subtract(operands);
+        return DoubleStream.of(operands)
+                .sum();
 
 
     }
